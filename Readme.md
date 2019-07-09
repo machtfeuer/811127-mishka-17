@@ -1,7 +1,9 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор Петров](https://up.htmlacademy.ru/adaptive/17/user/811127).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Вадясова`.
+* Аватар моего наставника:
+<p align="left"><img src="https://camo.githubusercontent.com/2bfa0f365013ce463a9bd33331fab00bc8ae455b/68747470733a2f2f737469636b657273766b2e636f6d2f692f3132382f323938312e706e67" alt="Аватар Ольги Вадясовой" style="border-radius: 50%"></p>
 
 ---
 
