@@ -2,11 +2,200 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка - Мягкие изделья ручной работы для вашего дома</title>
   </head>
   <body>
+    <!-- Page header & site navigation blocks -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav">
+          <!-- Main navigation of site -->
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item ">
+              <a class="main-nav__logo">
+                <img class="main-nav__logo-image" src="page-header/images/logo-mobile.svg" alt="Магазин ручных мягких изделий Мишка">
+              </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+              <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+            </li>
 
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+
+            <li class="main-nav__item">
+              <button class="user-list__search" type="button" aria-label="Поиск по сайту"></button>
+            </li>
+
+            <li class="user-list__item">
+              <a class="user-list__basket" href="basket.html">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+          <!-- /.site-list -->
+        </nav>
+        <!-- /.main-nav -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.page-header -->
+
+    <!-- Content of pages -->
+    <main class="page-main">
+      <!-- Section "Catalog" -->
+      <section class="catalog">
+        <div class="catalog__background">
+          <h1 class="catalog__headline headline">Милые штуки ручной работы для дома</h1>
+        </div>
+        <!-- /.catalog__background -->
+
+        <h2 class="visually-hidden">Категории товаров</h2>
+
+        <ul class="catalog__container category-list">
+
+          <a class="categoty-list__link" href="catalog.html?part=interior">
+            <li class="category-list__item--interior">Предметы интерьера</li>
+          </a>
+
+          <a class="categoty-list__link" href="catalog.html?part=toys">
+            <li class="category-list__item--toys">Детские игрушки</li>
+          </a>
+        </ul>
+        <!-- .catalog__container.category-list -->
+      </section>
+      <!-- /.catalog -->
+
+      <!-- Section "Product of the week" -->
+      <section class="top-product">
+        <h2 class="top-product__title headline">Вязанные корзинки</h2>
+        <h3 class="top-product__category headline_color--green">Товар недели</h3>
+
+        <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
+        <table class="top-product__specification specification-table">
+          <tr class="specification-table__item">
+            <td class="specification-table__name">Цвет:</td>
+            <td class="specification-table__value">&#171;Тиффани&#187;/серый</td>
+          </tr>
+
+          <tr class="specification-table__item">
+            <td class="specification-table__name">Диаметр:</td>
+            <td class="specification-table__value">25 см</td>
+          </tr>
+
+          <tr class="specification-table__item">
+            <td class="specification-table__name">Высота</td>
+            <td class="specification-table__value">15 см</td>
+          </tr>
+        </table>
+        <!-- /.top-product__specification.specification-table -->
+
+        <img class="top-product__image" src="img/product1.jpeg" alt="Вязанная корзинка Тиффани, цвет серый">
+
+        <p class="top-product__price">Цена: 990 руб.</p>
+
+        <button class="button" type="button">Заказать</button>
+      </section>
+      <!-- /.top-product -->
+
+      <!-- Section "About us" -->
+      <section class="about-us">
+        <h2 class="about-us__headline headline">Коротко о нас:</h2>
+
+        <ul class="about-us__feature-list feature-list">
+          <li class="feature-list__item_icon--flower">
+            Экологически чистые материалы
+          </li>
+
+          <li class="feature-list__item_icon--price">
+            Скандинавский стиль по российской цене
+          </li>
+
+          <li class="feature-list__item_icon--like">
+            Увеличивает лайки на фотографиях
+          </li>
+
+          <li class="feature-list__item_icon--ball">
+            Связано вручную с любовью и умилением
+          </li>
+
+          <li class="feature-list__item_icon--rocket">
+            Поддержка отечественного производителя
+          </li>
+
+          <li class="feature-list__item_icon--gift">
+            Поставляется в подарочной упаковке
+          </li>
+        </ul>
+        <!-- /.about-us__feature-list.feature-list -->
+      </section>
+      <!-- /.about-us -->
+
+      <!-- Section "Customer reviews" -->
+      <section class="feedback">
+        <h2 class="feedback__headline headline">Отзывы</h2>
+
+        <article class="feedback__item">
+          <blockquote class="feedback__comment">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </blockquote>
+
+          <author class="feedback__author">Анастасия Красильникова</author>
+
+          <city class="feedback__author-link">
+            <a href="http://instagram.com/misssssiskras">@misssssiskras</a>
+          </city>
+        </article>
+        <!-- /.feedback__item -->
+
+        <button class="feedback__button--preview button" type="button" aria-label="Предыдущий отзыв"></button>
+        <button class="feedback__button--next button" type="button" aria-label="Следующий отзыв"></button>
+
+        <button type="feedback__button button">Написать</button>
+      </section>
+      <!-- /.feedback -->
+
+      <!-- Section "How to find us" -->
+      <section class="contact">
+        <h2 class="contact__headline headline">Контакты</h2>
+
+        <table class="contact__contact-list contact-list">
+          <tr>
+            <td class="contact-list__type">e-mail:</td>
+            <td class="contact-list__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          </tr>
+          <tr>
+            <td class="contact-list__type">адрес:</td>
+            <td class="contact-list__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <!-- /.contact_contact-list.contact-list -->
+
+        <img src="images/yandex-map.jpeg" alt="Yandex карта проезда">
+
+        <button type="contact-list__button button">Напишите нам</button>
+      </section>
+      <!-- /.contact -->
+    </main>
+    <!-- /.page-main -->
+
+    <!-- Footer of page -->
+    <footer class="page-footer">
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-instaram.png"></a></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-facebook.png"></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-twitter.png"></a></li>
+      </ul>
+      <!-- /.page-footer__social-list.social-list -->
+
+      <div class="page-footer__copyright copyright">
+        <a href="http://htmlacademy.com/">Разработано</a>
+      </div>
+      <!-- /.page-footer__copyright.copyright -->
+    </footer>
+    <!-- /.page-footer -->
   </body>
 </html>

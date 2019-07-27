@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка - Каталог товаров</title>
+  </head>
+  <body>
+    <!-- Page header & site navigation blocks -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav">
+          <!-- Main navigation of site -->
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item ">
+              <a class="main-nav__logo">
+                <img class="main-nav__logo-image" src="page-header/images/logo-mobile.svg" alt="Магазин ручных мягких изделий Мишка">
+              </a>
+
+              <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+
+            <li class="main-nav__item">
+              <button class="user-list__search" type="button" aria-label="Поиск по сайту"></button>
+            </li>
+
+            <li class="user-list__item">
+              <a class="user-list__basket" href="basket.html">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+          <!-- /.site-list -->
+        </nav>
+        <!-- /.main-nav -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.page-header -->
+
+    <!-- Content of pages -->
+    <main class="page-main">
+      <h1 class="headline headline_background--gray">Каталог товаров</h1>
+
+      <!-- Section "Product list" -->
+      <section class="products">
+
+        <ul class="product-list">
+          <li class="product-list__item">
+            <h2 class="product-list__title">Зайчик - попрыгайчик</h2>
+            <img class="product-list__image" src="img/product/toy-bunny.jpeg" alt="Вязанный зайчик, который прыгает">
+            <p class="product-list__description">Рост 30 см, вес 200 г</p>
+            <hr>
+            <p class="product-list__price">1 200 руб.</p>
+            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+
+          <li class="product-list__item">
+            <h2 class="product-list__title">Корзинка для белья</h2>
+            <img class="product-list__image" src="img/product/laundry-basket.jpeg" alt="Вязанная корзинка для хранения белья">
+            <p class="product-list__description">Диаметр 15 см, высота 10 см</p>
+            <hr>
+            <p class="product-list__price">690 руб.</p>
+            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+
+          <li class="product-list__item">
+            <h2 class="product-list__title">Большая корзинка для игрушек</h2>
+            <img class="product-list__image" src="img/product/toys-basket.jpeg" alt="Вязанная корзинка для хранения игрушек">
+            <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
+            <hr>
+            <p class="product-list__price">1 500 руб.</p>
+            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+        </ul>
+        <!-- /.product-list -->
+      </section>
+      <!-- /.products -->
+
+      <section class="process">
+        <h2 class="process__title">Процесс производства</h2>
+        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="process__button button text_register--uppercase">Сделать заказ</button>
+      </section>
+      <!-- /.process -->
+    </main>
+    <!-- /.page-main -->
+
+    <!-- Footer of page -->
+    <footer class="page-footer">
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-instaram.png"></a></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-facebook.png"></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-twitter.png"></a></li>
+      </ul>
+      <!-- /.page-footer__social-list.social-list -->
+
+      <div class="page-footer__copyright copyright">
+        <a href="http://htmlacademy.com/">Разработано</a>
+      </div>
+      <!-- /.page-footer__copyright.copyright -->
+    </footer>
+    <!-- /.page-footer -->
+  </body>
+</html>

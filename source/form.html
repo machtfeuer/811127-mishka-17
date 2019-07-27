@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Мишка - Мягкие изделья ручной работы для вашего дома</title>
+  </head>
+  <body>
+    <!-- Page header & site navigation blocks -->
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav">
+          <!-- Main navigation of site -->
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item ">
+              <a class="main-nav__logo">
+                <img class="main-nav__logo-image" src="page-header/images/logo-mobile.svg" alt="Магазин ручных мягких изделий Мишка">
+              </a>
+
+              <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+
+            <li class="main-nav__item">
+              <button class="user-list__search" type="button" aria-label="Поиск по сайту"></button>
+            </li>
+
+            <li class="user-list__item">
+              <a class="user-list__basket" href="basket.html">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+          <!-- /.site-list -->
+        </nav>
+        <!-- /.main-nav -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.page-header -->
+
+    <!-- Content of pages -->
+    <main class="page-main">
+      <h1 class="headline headline_background--gray">Вязание на заказ</h1>
+
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа</h2>
+
+        <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="field">
+            <legend class="field__headline text_register--uppercase">Тип</legend>
+
+            <ul class="field__list">
+              <li class="field__item field__item--type">
+                <input class="visually-hidden field__radio" type="radio" id="type-interior" name="type-field" value="interior">
+                <label for="type-interior">Аксессуар для интерьера</label>
+              </li>
+
+              <li class="field__item field__item--type">
+                <input class="visually-hidden field__radio" type="radio" id="type-toys" name="type-field" value="toys">
+                <label for="type-toys">Детская игрушка</label>
+              </li>
+            </ul>
+            <!-- /.field__list -->
+          </fieldset>
+          <!-- /.field -->
+
+          <fieldset class="field">
+            <legend class="field__headline text_register--uppercase">Цвет</legend>
+
+            <ul class="field__list">
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-white" name="color-field" value="white" checked>
+                <label for="color-white">Белый</label>
+              </li>
+
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-gray" name="color-field" value="gray" checked>
+                <label for="color-gray">Серый</label>
+              </li>
+
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-tiffany" name="color-field" value="tiffany">
+                <label for="color-tiffany">&#171;Тиффани&#187;</label>
+              </li>
+
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-black" name="color-field" value="black">
+                <label for="color-black">Черный</label>
+              </li>
+
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-pink" name="color-field" value="pink">
+                <label for="color-pink">Розовый</label>
+              </li>
+
+              <li class="field__item field__item--color">
+                <input class="visually-hidden field__checkbox" type="checkbox" id="color-orange" name="color-field" value="orange">
+                <label for="color-orange">Оранжевый</label>
+              </li>
+            </ul>
+            <!-- /.field__list -->
+          </fieldset>
+          <!-- /.field -->
+
+          <fieldset class="field">
+            <legend class="field__headline text_register--uppercase">ФИО</legend>
+
+            <ul class="field__list">
+              <li class="field__item filed__item--fio">
+                <label for="fio-name">Имя:</label>
+                  <input class="field__text" type="text" id="fio-name" name="name-field" placeholder="Введите ваше имя*" required>
+              </li>
+
+              <li class="field__item filed__item--fio">
+                <label for="fio-surname">Имя:</label>
+                  <input class="field__text" type="text" id="fio-surname" name="surname-field" placeholder="Введите ваше имя*" required>
+              </li>
+
+              <li class="field__item filed__item--fio">
+                <label for="fio-middlename">Имя:</label>
+                  <input class="field__text" type="text" id="fio-middlename" name="middlename-field" placeholder="Введите ваше имя*" required>
+              </li>
+            </ul>
+            <!-- /.field__list -->
+          </fieldset>
+          <!-- /.field -->
+
+          <fieldset>
+            <legend class="field__headline text_register--uppercase">Тел</legend>
+
+            <ul class="field__list">
+              <li class="filed__item filed__item--tel">
+                <input type="field__text" type="tel" id="phone" name="phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required="">
+              </li>
+            </ul>
+          </fieldset>
+          <!-- /.field -->
+
+          <fieldset class="field">
+            <legend class="field__headline text_register--uppercase">E-mail</legend>
+
+            <ul class="field__list">
+              <li class="filed__item filed__item--email">
+                <input type="field__text" type="email" id="email" name="email-field" placeholder="Ваш Email*" required="">
+              </li>
+            </ul>
+            <!-- /.field__list -->
+          </fieldset>
+          <!-- /.field -->
+
+          <fieldset class="field">
+            <legend class="field__headline text_register--uppercase">Доп</legend>
+
+            <ul class="field__list">
+              <li class="filed__item--textarea">
+                <textarea class="field__textarea" id="additionally" name="additionally-field" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </li>
+            </ul>
+            <!-- /.field__list -->
+          </fieldset>
+          <!-- /.field -->
+
+          <p class="form__extra">*Поля обязательны для заполнения</p>
+          <input class="form__button button text_register--uppercase" type="submit" value="Отправить заказ">
+        </form>
+      </section>
+    </main>
+    <!-- /.page-main -->
+
+    <!-- Footer of page -->
+    <footer class="page-footer">
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-instaram.png"></a></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-facebook.png"></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-twitter.png"></a></li>
+      </ul>
+      <!-- /.page-footer__social-list.social-list -->
+
+      <div class="page-footer__copyright copyright">
+        <a href="http://htmlacademy.com/">Разработано</a>
+      </div>
+      <!-- /.page-footer__copyright.copyright -->
+    </footer>
+    <!-- /.page-footer -->
+  </body>
+</html>
