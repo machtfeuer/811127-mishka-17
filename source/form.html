@@ -25,9 +25,13 @@
           </ul>
           <!-- /.site-list -->
 
-          <button class="nav__search" type="button" aria-label="Поиск по сайту"></button>
+          <div class="nav__control">
+            <button class="nav__button nav__button--search " type="button" aria-label="Поиск по сайту"></button>
+          </div>
 
-          <button class="nav__toggle" type="button" aria-label="Показать меню"></button>
+          <div class="nav__control">
+            <button class="nav__toggle nav__button--toggle" type="button" aria-label="Показать меню"></button>
+          </div>
         </nav>
         <!-- /.nav -->
       </div>
@@ -41,11 +45,15 @@
 
       <section class="order">
         <div class="container">
-          <header>
+          <header class="order__header">
             <h2 class="visually-hidden">Форма заказа</h2>
           </header>
+          <!-- /.order__header -->
 
-          <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <div class="order__intro">
+            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          </div>
+          <!-- /.order__intro -->
 
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="field">
@@ -162,8 +170,11 @@
             </fieldset>
             <!-- /.field -->
 
-            <p class="form__extra">*Поля обязательны для заполнения</p>
-            <input class="form__button button text--uppercase" type="submit" value="Отправить заказ">
+            <footer class="order__footer">
+              <p class="form__extra">*Поля обязательны для заполнения</p>
+              <input class="form__button button text--uppercase" type="submit" value="Отправить заказ">
+            </footer>
+            <!-- /.order__footer -->
           </form>
         </div>
         <!-- /.container -->

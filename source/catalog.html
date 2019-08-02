@@ -25,9 +25,13 @@
           </ul>
           <!-- /.site-list -->
 
-          <button class="nav__search" type="button" aria-label="Поиск по сайту"></button>
+          <div class="nav__control">
+            <button class="nav__button nav__button--search " type="button" aria-label="Поиск по сайту"></button>
+          </div>
 
-          <button class="nav__toggle" type="button" aria-label="Показать меню"></button>
+          <div class="nav__control">
+            <button class="nav__toggle nav__button--toggle" type="button" aria-label="Показать меню"></button>
+          </div>
         </nav>
         <!-- /.nav -->
       </div>
@@ -43,49 +47,64 @@
       <!-- Section "Product list" -->
       <section class="product">
         <div class="container">
-          <ul class="products__procut-list product-list">
+          <ul class="product__procut-list product-list">
             <li class="product__item">
-              <header>
+              <header class="product__header">
                 <h2 class="product__title">Зайчик - попрыгайчик</h2>
               </header>
+              <!-- /.product__header -->
 
-              <img class="product__image" src="img/product/toy-bunny.jpeg" alt="Вязанный зайчик, который прыгает">
-              <p class="product__description">Рост 30 см, вес 200 г</p>
+              <div class="product__information">
+                <img class="product__image" src="img/product/toy-bunny.jpeg" alt="Вязанный зайчик, который прыгает">
+                <p class="product__description">Рост 30 см, вес 200 г</p>
+              </div>
+              <!-- /.product__information -->
 
-              <footer>
+              <footer class="product__footer">
                 <p class="product__price">1 200 руб.</p>
                 <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
               </footer>
+              <!-- /.product__footer -->
             </li>
             <!-- /.product__item -->
 
             <li class="product__item">
-              <header>
+              <header class="product__header">
                 <h2 class="product__title">Корзинка для белья</h2>
               </header>
+              <!-- /.product__header -->
 
-              <img class="product__image" src="img/product/laundry-basket.jpeg" alt="Вязанная корзинка для хранения белья">
-              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              <div class="product__information">
+                <img class="product__image" src="img/product/laundry-basket.jpeg" alt="Вязанная корзинка для хранения белья">
+                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <!-- /.product__information -->
 
-              <footer>
+              <footer class="product__footer">
                 <p class="product__price">690 руб.</p>
                 <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
               </footer>
+              <!-- /.product__footer -->
             </li>
             <!-- /.product__item -->
 
             <li class="product__item">
-              <header>
+              <header class="product__header">
                 <h2 class="product__title">Большая корзинка для игрушек</h2>
               </header>
+              <!-- /.product__header -->
 
-              <img class="product__image" src="img/product/toys-basket.jpeg" alt="Вязанная корзинка для хранения игрушек">
-              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              <div class="product__information">
+                <img class="product__image" src="img/product/toys-basket.jpeg" alt="Вязанная корзинка для хранения игрушек">
+                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <!-- /.product__information -->
 
-              <footer>
+              <footer class="product__footer">
                 <p class="product__price">1 500 руб.</p>
                 <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
               </footer>
+              <!-- /.product__footer -->
             </li>
             <!-- /.product__item -->
           </ul>
@@ -97,15 +116,20 @@
 
       <section class="process">
         <div class="container">
-          <header>
+          <header class="process__header">
             <h2 class="process__title">Процесс производства</h2>
           </header>
+          <!-- /.process__header -->
 
-          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <div class="process__information">
+            <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          </div>
+          <!-- /.process__information -->
 
-          <footer>
+          <footer class="process__footer">
             <button class="process__button button text--uppercase">Сделать заказ</button>
           </footer>
+          <!-- /.process__footer -->
         </div>
       </section>
       <!-- /.process -->

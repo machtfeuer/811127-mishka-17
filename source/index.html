@@ -25,9 +25,13 @@
           </ul>
           <!-- /.site-list -->
 
-          <button class="nav__search" type="button" aria-label="Поиск по сайту"></button>
+          <div class="nav__control">
+            <button class="nav__button nav__button--search " type="button" aria-label="Поиск по сайту"></button>
+          </div>
 
-          <button class="nav__toggle" type="button" aria-label="Показать меню"></button>
+          <div class="nav__control">
+            <button class="nav__toggle nav__button--toggle" type="button" aria-label="Показать меню"></button>
+          </div>
         </nav>
         <!-- /.nav -->
       </div>
@@ -40,9 +44,10 @@
       <!-- Section "Catalog" -->
       <section class="promo">
         <div class="container">
-          <header>
+          <header class="promo__header">
             <h1 class="promo__headline headline">Милые штуки ручной работы для дома</h1>
           </header>
+          <!-- /.promo__header -->
 
           <ul class="promo__list">
             <li class="promo__item">
@@ -98,6 +103,7 @@
 
             <button class="button" type="button">Заказать</button>
           </footer>
+          <!-- /.popular__footer -->
         </div>
         <!-- /.container -->
       </article>
@@ -106,9 +112,10 @@
       <!-- Section "About us" -->
       <section class="about">
         <div class="container">
-          <header>
+          <header class="about__header">
             <h2 class="about__headline headline">Коротко о нас:</h2>
           </header>
+          <!-- /.about__header -->
 
           <ul class="about__feature-list feature-list">
             <li class="feature-list__item feature-list__icon feature-list__icon--flower">
@@ -144,9 +151,10 @@
       <!-- Section "Customer reviews" -->
       <section class="feedback">
         <div class="container">
-          <header>
+          <header class="feedback__header">
             <h2 class="feedback__headline headline">Отзывы</h2>
           </header>
+          <!-- /.feedback__header -->
 
           <ul class="feedback__list">
             <li class="feedback__item">
@@ -166,7 +174,7 @@
           </ul>
           <!-- /.feedback__list -->
 
-          <footer>
+          <footer class="feedback__footer">
             <div class="feedback__paginator paginator">
               <button class="feedback__button--preview button" type="button" aria-label="Предыдущий отзыв"></button>
               <button class="feedback__button--next button" type="button" aria-label="Следующий отзыв"></button>
@@ -174,6 +182,7 @@
 
             <button class="feedback__button button" type="button">Написать</button>
           </footer>
+          <!-- /.feedback__footer -->
         </div>
         <!-- /.container -->
       </section>
@@ -182,7 +191,10 @@
       <!-- Section "How to find us" -->
       <section class="contact">
         <div class="container">
-          <h2 class="contact__headline headline">Контакты</h2>
+          <header class="contact__header">
+            <h2 class="contact__headline headline">Контакты</h2>
+          </header>
+          <!-- /.contact__header -->
 
           <table class="contact__contact-list contact-list">
             <tr>
@@ -196,9 +208,12 @@
           </table>
           <!-- /.contact_contact-list.contact-list -->
 
-          <img src="images/yandex-map.jpeg" alt="Yandex карта проезда">
+          <footer class="contact__footer">
+            <img src="images/yandex-map.jpeg" alt="Yandex карта проезда">
 
-          <button class="contact-list__button button" type="button">Напишите нам</button>
+            <button class="contact-list__button button" type="button">Напишите нам</button>
+          </footer>
+          <!-- /.contact-footer -->
         </div>
         <!-- /.container -->
       </section>
