@@ -6,106 +6,134 @@
   </head>
   <body>
     <!-- Page header & site navigation blocks -->
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <nav class="main-nav">
+        <nav class="nav">
+          <a class="nav__logo">
+            <img class="nav__logo-image logo" src="page-header/images/logo-mobile.svg" alt="Магазин ручных мягких изделий Мишка">
+          </a>
+
           <!-- Main navigation of site -->
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item ">
-              <a class="main-nav__logo">
-                <img class="main-nav__logo-image" src="page-header/images/logo-mobile.svg" alt="Магазин ручных мягких изделий Мишка">
-              </a>
-
-              <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+          <ul class="nav__list site-list">
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог товаров</a>
             </li>
 
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-
-            <li class="main-nav__item">
-              <button class="user-list__search" type="button" aria-label="Поиск по сайту"></button>
-            </li>
-
-            <li class="user-list__item">
-              <a class="user-list__basket" href="basket.html">Корзина: <span>пока пуста</span></a>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <!-- /.site-list -->
+
+          <button class="nav__search" type="button" aria-label="Поиск по сайту"></button>
+
+          <button class="nav__toggle" type="button" aria-label="Показать меню"></button>
         </nav>
-        <!-- /.main-nav -->
+        <!-- /.nav -->
       </div>
       <!-- /.container -->
     </header>
-    <!-- /.page-header -->
+    <!-- /.header -->
+
 
     <!-- Content of pages -->
-    <main class="page-main">
-      <h1 class="headline headline_background--gray">Каталог товаров</h1>
+    <main class="main">
+      <h1 class="headline headline--gray">Каталог товаров</h1>
 
       <!-- Section "Product list" -->
-      <section class="products">
+      <section class="product">
+        <div class="container">
+          <ul class="products__procut-list product-list">
+            <li class="product__item">
+              <header>
+                <h2 class="product__title">Зайчик - попрыгайчик</h2>
+              </header>
 
-        <ul class="product-list">
-          <li class="product-list__item">
-            <h2 class="product-list__title">Зайчик - попрыгайчик</h2>
-            <img class="product-list__image" src="img/product/toy-bunny.jpeg" alt="Вязанный зайчик, который прыгает">
-            <p class="product-list__description">Рост 30 см, вес 200 г</p>
-            <hr>
-            <p class="product-list__price">1 200 руб.</p>
-            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
-          </li>
+              <img class="product__image" src="img/product/toy-bunny.jpeg" alt="Вязанный зайчик, который прыгает">
+              <p class="product__description">Рост 30 см, вес 200 г</p>
 
-          <li class="product-list__item">
-            <h2 class="product-list__title">Корзинка для белья</h2>
-            <img class="product-list__image" src="img/product/laundry-basket.jpeg" alt="Вязанная корзинка для хранения белья">
-            <p class="product-list__description">Диаметр 15 см, высота 10 см</p>
-            <hr>
-            <p class="product-list__price">690 руб.</p>
-            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
-          </li>
+              <footer>
+                <p class="product__price">1 200 руб.</p>
+                <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
+              </footer>
+            </li>
+            <!-- /.product__item -->
 
-          <li class="product-list__item">
-            <h2 class="product-list__title">Большая корзинка для игрушек</h2>
-            <img class="product-list__image" src="img/product/toys-basket.jpeg" alt="Вязанная корзинка для хранения игрушек">
-            <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
-            <hr>
-            <p class="product-list__price">1 500 руб.</p>
-            <button class="product-list__button--basket" type="button" aria-label="Добавить в корзину"></button>
-          </li>
-        </ul>
-        <!-- /.product-list -->
+            <li class="product__item">
+              <header>
+                <h2 class="product__title">Корзинка для белья</h2>
+              </header>
+
+              <img class="product__image" src="img/product/laundry-basket.jpeg" alt="Вязанная корзинка для хранения белья">
+              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+
+              <footer>
+                <p class="product__price">690 руб.</p>
+                <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
+              </footer>
+            </li>
+            <!-- /.product__item -->
+
+            <li class="product__item">
+              <header>
+                <h2 class="product__title">Большая корзинка для игрушек</h2>
+              </header>
+
+              <img class="product__image" src="img/product/toys-basket.jpeg" alt="Вязанная корзинка для хранения игрушек">
+              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+
+              <footer>
+                <p class="product__price">1 500 руб.</p>
+                <button class="product__button button" type="button" aria-label="Добавить в корзину"></button>
+              </footer>
+            </li>
+            <!-- /.product__item -->
+          </ul>
+          <!-- /.product-list -->
+        </div>
+        <!-- /.container -->
       </section>
       <!-- /.products -->
 
       <section class="process">
-        <h2 class="process__title">Процесс производства</h2>
-        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__button button text_register--uppercase">Сделать заказ</button>
+        <div class="container">
+          <header>
+            <h2 class="process__title">Процесс производства</h2>
+          </header>
+
+          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+          <footer>
+            <button class="process__button button text--uppercase">Сделать заказ</button>
+          </footer>
+        </div>
       </section>
       <!-- /.process -->
     </main>
-    <!-- /.page-main -->
-
+    <!-- /.main -->
 
     <!-- Footer of page -->
-    <footer class="page-footer">
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-instaram.png" alt="Instagram"></a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-facebook.png" alt="Facebook"></a></li>
-        <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/icon-twitter.png" alt="Twitter"></a></li>
-      </ul>
-      <!-- /.page-footer__social-list.social-list -->
+    <footer class="footer">
+      <div class="container">
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
 
-      <div class="page-footer__copyright copyright">
-        <a href="http://htmlacademy.com/">Разработано</a>
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link" href="#"><img src="img/icon-instaram.png" alt="Instagram"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="img/icon-facebook.png" alt="Facebook"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="img/icon-twitter.png" alt="Twitter"></a></li>
+          </ul>
+          <!-- /.footer__social-list.social-list -->
+        </section>
+        <!-- /.social -->
+
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="http://htmlacademy.com/">Разработано</a>
+        </div>
+        <!-- /.footer__copyright.copyright -->
       </div>
-      <!-- /.page-footer__copyright.copyright -->
+      <!-- /.container -->
     </footer>
-    <!-- /.page-footer -->
+    <!-- /.footer -->
   </body>
 </html>
