@@ -49,18 +49,25 @@ body {
 
   border: 2px solid #444444;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #4f4f4f;
+    background-color: #444444;
+  }
 }
 
 @import (less) "blocks/__nav";
 @import (less) "blocks/__promo";
 @import (less) "blocks/__popular";
-@import (less) "blocks/__specification";
-@import (less) "blocks/__about";
-@import (less) "blocks/__feature-list";
+@import (less) "blocks/__feature";
 @import (less) "blocks/__feedback";
 @import (less) "blocks/__contact";
 @import (less) "blocks/__product";
 @import (less) "blocks/__process";
 @import (less) "blocks/__footer";
-@import (less) "blocks/__social";
-@import (less) "blocks/__copyright";
