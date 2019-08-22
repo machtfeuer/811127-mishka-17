@@ -1,5 +1,8 @@
 .footer {
   background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 40px;
+
 
   &__social {
     &-list {
@@ -12,12 +15,31 @@
 
     &-item {
       display: inline-block;
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: @color-green;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    &-item:not(:first-child) {
+      margin-left: 40px;
     }
   }
 
   &__copyright {
     display: block;
+    padding-top: 15px;
     text-align: center;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e5e5e5;
 
     &-link {
       display: block;
@@ -25,7 +47,18 @@
       font-size: 19px;
       line-height: 18px;
       font-weight: bold;
-      color: #000000;
+      color: @color-black;
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: @color-green;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

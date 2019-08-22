@@ -1,6 +1,4 @@
 .product {
-  padding: 0 30px;
-
   &__list {
     padding: 0;
 
@@ -13,6 +11,15 @@
     border-width: 1px;
     border-style: solid;
     border-color: #ededed;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 5px 0px #ececec;
+    }
+
+    &:active {
+      box-shadow: 0px 3px 1px 0px #ececec;
+    }
   }
 
   &__title,
@@ -24,7 +31,7 @@
   &__title {
     font-size: 17px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: @line-height;
   }
 
   &__description {
@@ -32,9 +39,34 @@
     line-height: 30px;
   }
 
+  &__footer {
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
   &__price {
-    font-size: 15px;
+    font-size: @font-size;
     font-weight: bold;
-    line-height: 24px;
+    line-height: @line-height;
+  }
+
+  &__cart {
+    background-color: transparent;
+    border: none;
+
+    svg {
+      fill: #d3d2d2;
+    }
+    &:hover,
+    &:focus {
+      svg {
+        fill: @color-green;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

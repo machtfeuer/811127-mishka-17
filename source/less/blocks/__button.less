@@ -1,0 +1,32 @@
+.button {
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+
+  height: 52px; /* Заменить на padding */
+
+  text-transform: uppercase;
+
+  border: 2px solid @button-border;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &--block {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    color: @color-inverse;
+    background-color: @button-bg-hover;
+  }
+
+  &:active {
+    color: #4f4f4f;
+    background-color: @button-bg-active;
+  }
+}
+
+/* Кнопка в каталоге не имеет никакого отношения к классам btn */

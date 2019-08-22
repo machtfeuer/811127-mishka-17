@@ -1,6 +1,4 @@
 .process {
-  padding: 0 30px;
-
   &__header {
     margin-bottom: 10px;
     padding: 0;
@@ -12,9 +10,11 @@
   }
 
   &__headline {
-    font-size: 17px;
+    padding: 33px 0;
+
+    font-size: @font-size;
     font-weight: bold;
-    line-height: 24px;
+    line-height: @line-height;
 
     display: inline-block;
 
@@ -23,18 +23,14 @@
 
   &__information {
     font-size: 13px;
-    line-height: 24px;
+    line-height: @line-height;
 
-    color: #444444;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ededed;
+    color: @color-base;
 
     p
     {
       margin-top: 20px;
       padding: 0;
-      padding: 0 30px;
     }
   }
 
