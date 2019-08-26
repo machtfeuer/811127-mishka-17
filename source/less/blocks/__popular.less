@@ -1,10 +1,10 @@
 .popular {
   &__title {
     font-size: 25px;
-    line-height: 30px;
     font-weight: bold;
+    line-height: 30px;
 
-    padding: 26px 0px 0px 0px;
+    padding: 26px 0 0 0;
   }
 
   &__category {
@@ -14,11 +14,11 @@
 
     display: block;
 
+    margin-top: 5px;
+
     text-transform: uppercase;
 
     color: @color-green;
-
-    margin-top: 5px;
   }
 
   &__description {
@@ -28,24 +28,27 @@
     color: @color-base;
 
     p {
-      padding: 10px 0px 0px 0px;
+      padding: 10px 0 0 0;
     }
   }
 
   &__table {
-    margin-top: 16px;
     width: 100%;
-    border-spacing: 0px;
+    margin-top: 16px;
+
+    border-spacing: 0;
   }
 
   &__table-name,
   &__table-value {
-    padding: 10px 0px;
+    font-size: @font-size;
+    line-height: 20px;
+
+    padding: 10px 0;
+
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: @color-gray;
-    font-size: @font-size;
-    line-height: 20px;
   }
 
   &__table-value {
@@ -61,12 +64,15 @@
   }
 
   &__price {
-    display: block;
-    margin-top: 15px;
     font-size: 17px;
-    color: @color-base;
     font-weight: bold;
     line-height: @line-height;
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: @color-base;
   }
 
   &__button {

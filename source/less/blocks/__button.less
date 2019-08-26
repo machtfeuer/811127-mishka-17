@@ -1,17 +1,17 @@
 .button {
-  font-family: "OpenSans";
+  font-family: @font-family;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
 
-  height: 52px; /* Заменить на padding */
 
+  padding: 14px 0;
+
+  cursor: pointer;
   text-transform: uppercase;
 
   border: 2px solid @button-border;
   background-color: transparent;
-
-  cursor: pointer;
 
   &--block {
     width: 100%;
@@ -28,5 +28,3 @@
     background-color: @button-bg-active;
   }
 }
-
-/* Кнопка в каталоге не имеет никакого отношения к классам btn */
