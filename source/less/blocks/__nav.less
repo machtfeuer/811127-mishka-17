@@ -1,8 +1,10 @@
 .nav {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
 
   &__logo {
-    text-align: center;
+    margin: auto;
 
     &:hover,
     &:focus {
@@ -15,6 +17,8 @@
   }
 
   &__list {
+    display: none;
+
     padding: 0;
 
     list-style: none;
@@ -37,5 +41,16 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  &__search {
+    display: none;
+  }
+
+  &__toggle {
+    position: absolute;
+    right: -6px;
+
+    align-self: center;
   }
 }
