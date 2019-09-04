@@ -3,6 +3,11 @@
 
   border-bottom: 1px solid #ececec;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   &__logo {
     margin: auto;
 
@@ -14,17 +19,17 @@
     &:active {
       opacity: 0.3;
     }
-  }
+  } //.nav__logo
 
   &__list {
-    display: none;
-
     padding: 0;
 
     list-style: none;
-  }
+  } //.nav__list
 
   &__link {
+    width: 167px;
+
     font-size: 17px;
     font-weight: bold;
     line-height: 24px;
@@ -41,16 +46,20 @@
     &:active {
       opacity: 0.3;
     }
-  }
+  } //.nav__link
 
   &__search {
     display: none;
-  }
+
+    @media @viewport-tablet {
+      display: block;
+    }
+  } //.nav__search
 
   &__toggle {
     position: absolute;
     right: -6px;
 
     align-self: center;
-  }
-}
+  } //.nav__toggle
+} //.nav

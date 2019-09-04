@@ -1,11 +1,50 @@
 .popular {
+  margin-top: 40px;
+
+  .container {
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    @media @viewport-tablet {
+      flex-direction: row;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media @viewport-desktop {
+      flex-direction: row-reverse;
+
+      justify-content: flex-end;
+    }
+  } //.popular__header
+
   &__title {
     font-size: 25px;
     font-weight: bold;
     line-height: 30px;
 
-    padding: 26px 0 0 0;
-  }
+    padding: 0;
+
+    @media @viewport-tablet {
+      font-size: 43px;
+      line-height: 50px;
+
+      margin-left: -4px;
+      padding-left: 0;
+    }
+
+    @media @viewport-desktop {
+      font-size: 53px;
+      line-height: 57px;
+
+      padding-left: 40px;
+    }
+  } //.popular__title
 
   &__category {
     font-size: 17px;
@@ -19,25 +58,57 @@
     text-transform: uppercase;
 
     color: @color-green;
-  }
+
+    @media @viewport-tablet {
+      line-height: 17px;
+
+      width: 100px;
+      padding-right: 25px;
+
+      text-align: center;
+    }
+
+    @media @viewport-desktop {
+      width: 100px;
+      margin-left: 32px;
+
+      text-align: center;
+    }
+  } //.popular__category
 
   &__description {
     font-size: @font-size;
     line-height: @line-height;
 
+    display: flex;
+    flex-direction: column;
+
     color: @color-base;
+
+    align-items: top;
+
+    padding-bottom: 197px;
 
     p {
       padding: 10px 0 0 0;
     }
-  }
+
+    @media @viewport-tablet {
+      font-size: 17px;
+      line-height: 30px;
+
+      flex-direction: row;
+
+      margin-top: 20px;
+    }
+  } //.popular__description
 
   &__table {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 35px;
 
     border-spacing: 0;
-  }
+  } //.popular__table
 
   &__table-name,
   &__table-value {
@@ -49,19 +120,23 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: @color-gray;
-  }
+  } //.popular__table-name.popular__table-value
 
   &__table-value {
     padding-left: 15px;
-  }
+  } //.popular__table-value
 
   &__image {
     margin-top: 28px;
-  }
+  } //.popular__image
 
   &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
     text-align: center;
-  }
+  } //.popular__footer
 
   &__price {
     font-size: 17px;
@@ -73,9 +148,15 @@
     margin-top: 15px;
 
     color: @color-base;
-  }
+
+    @media @viewport-tablet {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  } //.popular__price
 
   &__button {
     margin-top: 10px;
-  }
-}
+    width: 100%;
+  } //.popular__button
+} //.popular

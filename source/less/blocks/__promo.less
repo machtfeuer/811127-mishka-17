@@ -1,9 +1,11 @@
 .promo {
-  .container {
-    max-width: 100%;
 
-    background-image: url("../../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media @viewport-tablet {
+    background-image: url("../../img/hero-tablet@1x.jpg");
   }
 
   &__headline {
@@ -24,6 +26,16 @@
     padding: 0;
 
     list-style: none;
+
+    @media @viewport-tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    @media @viewport-tablet {
+      width: 50%;
+    }
   }
 
   &__link {

@@ -26,8 +26,16 @@ body {
 }
 
 .container {
-  max-width: 260px;
+  width: 260px;
   margin: 0 auto;
+
+  @media @viewport-tablet {
+    width: 668px;
+  }
+
+  @media @viewport-desktop {
+    width: 1050px;
+  }
 }
 
 .pagetitle {
@@ -40,5 +48,15 @@ body {
     padding: 75px 0;
 
     text-align: center;
+
+    @media @viewport-tablet {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    @media @viewport-desktop {
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }

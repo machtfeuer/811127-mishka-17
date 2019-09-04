@@ -1,11 +1,50 @@
 .product {
+  &__image {
+    @media @viewport-tablet {
+      width: 50%;
+    }
+
+    @media @viewport-desktop {
+      width: 100%;
+    }
+  }
+
   &__list {
+    display: flex;
+    flex-direction: column;
+
     padding: 0;
 
     list-style: none;
-  }
+
+    @media @viewport-desktop {
+      flex-direction: row;
+
+      justify-content: space-between;
+    }
+  } //.product__list
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+
+    @media @viewport-tablet {
+      width: 50%;
+      flex-direction: row;
+    }
+
+    @media @viewport-desktop {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+  } //.product__wrapper
 
   &__item {
+    display: flex;
+    flex-direction: column;
+
     margin-top: 30px;
 
     cursor: pointer;
@@ -13,6 +52,14 @@
     border-width: 1px;
     border-style: solid;
     border-color: #ededed;
+
+    @media @viewport-tablet {
+      flex-direction: row;
+    }
+
+    @media @viewport-desktop {
+      flex-direction: column;
+    }
 
     &:hover,
     &:focus {
@@ -22,36 +69,43 @@
     &:active {
       box-shadow: 0 3px 1px 0 #ececec;
     }
-  }
+  } //.product__item
 
   &__title,
   &__description,
   &__price {
     padding: 0 28px;
-  }
+  } //.product__title.product__description.product__price
 
   &__title {
     font-size: 17px;
     font-weight: bold;
     line-height: @line-height;
-  }
+  } //.product__title
 
   &__description {
     font-size: 13px;
     line-height: 30px;
-  }
+  } //.product__description
 
   &__footer {
+    display: flex;
+    flex-direction: row;
+
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: #ececec;
-  }
+
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+  } //.product__footer
 
   &__price {
     font-size: @font-size;
     font-weight: bold;
     line-height: @line-height;
-  }
+  } //.product__price
 
   &__cart {
     border: none;
@@ -71,5 +125,5 @@
     &:active {
       opacity: 0.3;
     }
-  }
-}
+  } //.product__cart
+}//.product
