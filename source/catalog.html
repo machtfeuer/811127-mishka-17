@@ -77,7 +77,12 @@
         <div class="container">
           <ul class="product__list">
             <li class="product__item">
-              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Вязанный зайчик, который прыгает" width="260" height="195">
+              <picture>
+                <source media="(max-width: 679px)" srcset="img/photo-hare-mobile@1x.jpg">
+                <source media="(min-width: 680px)" srcset="img/photo-hare-tablet@1x.jpg">
+                <source media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.jpg">
+                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Вязанный зайчик, который прыгает">
+              </picture>
 
               <div class="product__wrapper">
                 <header class="product__header">
@@ -106,7 +111,12 @@
 
             <li class="product__item">
 
-              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Вязанная корзинка для хранения белья" width="260" height="195">
+              <picture>
+                <source media="(max-width: 679px)" srcset="img/photo-bowl-mobile@1x.jpg">
+                <source media="(min-width: 680px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                <source media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.jpg">
+                <img class="product__image" src="img/photo-bowl-desktop@1x.jpg" alt="Вязанная корзинка для хранения белья">
+              </picture>
 
               <div class="product__wrapper">
                 <header class="product__header">
@@ -134,7 +144,12 @@
 
             <li class="product__item">
 
-              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Вязанная корзинка для хранения игрушек">
+              <picture>
+                <source media="(max-width: 679px)" srcset="img/photo-toys-mobile@1x.jpg">
+                <source media="(min-width: 680px)" srcset="img/photo-toys-tablet@1x.jpg">
+                <source media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.jpg">
+              </picture>
+              <img class="product__image" src="img/photo-toys-desktop@1x.jpg" alt="Вязанная корзинка для хранения игрушек">
 
               <div class="product__wrapper">
                 <header class="product__header">
@@ -167,7 +182,12 @@
 
       <section class="process">
         <div class="container">
-          <img class="process__image" src="img/video-mobile@1x.jpg" alt="Процесс производства корзинки для белья">
+          <picture>
+            <source media="(max-width: 679px)" srcset="img/video-mobile@1x.jpg">
+            <source media="(min-width: 680px)" srcset="img/video-tablet@1x.jpg">
+            <source media="(min-width: 1050px)" srcset="img/video-desktop@1x.jpg">
+            <img class="process__image" src="img/video-desktop@1x.jpg" alt="Процесс производства корзинки для белья">
+          </picture>
 
           <div clacc="process__wrapper">
             <header class="process__header">

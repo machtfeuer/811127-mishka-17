@@ -3,6 +3,10 @@
 
   .container {
     position: relative;
+
+    @media @viewport-desktop {
+      padding-left: 170px;
+    }
   }
 
   &__header {
@@ -47,6 +51,7 @@
   } //.popular__title
 
   &__category {
+
     font-size: 17px;
     font-weight: bold;
     line-height: 20px;
@@ -63,12 +68,14 @@
       line-height: 17px;
 
       width: 100px;
-      padding-right: 25px;
 
       text-align: center;
     }
 
     @media @viewport-desktop {
+      position: absolute;
+      left 0;
+      top: 0;
       width: 100px;
       margin-left: 32px;
 

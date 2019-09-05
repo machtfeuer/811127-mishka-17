@@ -81,10 +81,12 @@
               <li class="promo__item">
                 <a class="promo__link promo__link--interior" href="catalog.html?part=interior">Предметы <br> интерьера</a>
               </li>
+              <!-- /.promo_item -->
 
               <li class="promo__item">
                 <a class="promo__link promo__link--toys" href="catalog.html?part=toys">Детские <br> игрушки</a>
               </li>
+              <!-- /.promo_item -->
             </ul>
             <!-- .promo__list -->
           </div>
@@ -110,21 +112,30 @@
                   <td class="popular__table-name">Цвет:</td>
                   <td class="popular__table-value">&#171;Тиффани&#187;/серый</td>
                 </tr>
+                <!-- /.popular__table-row -->
 
                 <tr class="popular__table-row">
                   <td class="popular__table-name">Диаметр:</td>
                   <td class="popular__table-value">25 см</td>
                 </tr>
+                <!-- /.popular__table-row -->
 
                 <tr class="popular__table-row">
                   <td class="popular__table-name">Высота</td>
                   <td class="popular__table-value">15 см</td>
                 </tr>
+                <!-- /.popular__table-row -->
               </table>
               <!-- /.popular__table -->
             </div>
+            <!-- /.popular__info -->
 
-            <img class="popular__image" src="img/triple-set-mobile@1x.jpg" alt="Вязанная корзинка Тиффани, цвет серый">
+            <picture>
+              <source media="(max-width: 679px)" srcset="img/triple-set-mobile@1x.jpg">
+              <source media="(min-width: 680px)" srcset="img/triple-set-tablet@1x.jpg">
+              <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg">
+              <img class="popular__image" src="img/triple-set-desktop@1x.jpg" alt="Вязанная корзинка Тиффани, цвет серый">
+            </picture>
           </div>
           <!-- /.popular__description -->
 
@@ -175,10 +186,7 @@
                 <p>Увеличивает лайки <br> на фотографиях</p>
               </li>
               <!-- /.feature__item -->
-            </ul>
-            <!-- /.feature__list -->
 
-            <ul class="feature__list">
               <li class="feature__item feature__item--ball">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px" viewBox="0 0 34.373 34.373" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
                   <g>
