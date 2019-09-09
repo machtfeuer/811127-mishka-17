@@ -1,19 +1,32 @@
 .search {
   &__button {
+    position: relative;
+
     cursor: pointer;
 
     border: none;
     background-color: transparent;
 
-    &:hover,
-    &:focus {
-      svg {
-        fill: @color-green;
-      }
-    }
-
     &:active {
       opacity: 0.3;
     }
   }
+
+  &__icon--button-svg {
+    position: absolute;
+    left: 0;
+
+
+    #Layer_1 {
+      &:hover,
+      &:focus {
+        fill: @color-green;
+      }
+    }
+  }
+}
+
+
+.change-my-color:hover {
+  fill: red;
 }

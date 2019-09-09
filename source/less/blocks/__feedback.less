@@ -1,20 +1,24 @@
 .feedback {
-  position: relative;
+  @media @viewport-tablet {
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
 
-  .container {
-    @media @viewport-tablet {
+  @media @viewport-desktop {
+    background-image: none;
+
+    .container {
       background-image: url("../../img/review@1x.jpg");
       background-repeat: no-repeat;
 
-      padding-top: 45px;
+      padding-top: 73px;
+      padding: 0 175px;
     }
   }
 
   &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
   }
 
   &__headline {
@@ -31,15 +35,6 @@
     @media @viewport-desktop {
       font-size: 53px;
       line-height: 57px;
-    }
-  }
-
-  &__button {
-    display: none;
-    width: 175px;
-
-    @media @viewport-tablet {
-      display: block;
     }
   }
 
@@ -72,13 +67,25 @@
     font-size: 15px;
     line-height: 30px;
 
-    margin: 0;
+    margin-left: 0;
 
     color: @color-base;
 
     @media @viewport-tablet {
       font-size: 17px;
       line-height: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 175px;
+
+    @media @viewport-tablet {
+      position: absolute;
+      right: 0;
+      top: 80px;
     }
   }
 
